@@ -2,6 +2,7 @@ import { UIState } from '@/lib/chat/actions'
 import { Session } from '@/lib/types'
 import { ExclamationTriangleIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
+import Script from 'next/script'
 
 export interface ChatList {
   messages: UIState
@@ -42,6 +43,21 @@ export function ChatList({ messages, session, isShared }: ChatList) {
           {message.attachments}
         </div>
       ))}
+
+      {/* Google AdSense Ad */}
+      <div className="flex justify-center my-4">
+        <ins className="adsbygoogle"
+             style={{ display: 'block' }}
+             data-ad-client="ca-pub-4592814778191453"
+             data-ad-slot="1158100898"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <Script id="adsbygoogle-init">
+          {`
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          `}
+        </Script>
+      </div>
     </div>
   ) : null
 }

@@ -13,8 +13,8 @@ import Script from 'next/script'
 export const metadata = {
   metadataBase: new URL('https://gemini.vercel.ai'),
   title: {
-    default: 'Next.js Gemini Chatbot',
-    template: `%s - Next.js Gemini Chatbot`
+    default: 'BingBlong AI',
+    template: `%s - For EveryJuan`
   },
   description:
     'Build your own generative UI chatbot using the Vercel AI SDK and Google Gemini',

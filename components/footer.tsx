@@ -12,15 +12,11 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Open source AI chatbot built with{' '}
-      <ExternalLink href="https://cloud.google.com/vertex-ai">
-        Google Gemini
+      Open source AI chatbot built by{' '}
+      <ExternalLink href="https://bingblong.com">
+        Swing Media
       </ExternalLink>
-      , <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and{' '}
-      <ExternalLink href="https://github.com/vercel/ai">
-        Vercel AI SDK
-      </ExternalLink>
-      .
+      , <ExternalLink href="https://google.com">Google</ExternalLink> All Rights Reserved @2024 .
     </p>
   )
 }

@@ -7,6 +7,7 @@ import { auth } from '@/auth'
 import { Button, buttonVariants } from '@/components/ui/button'
 import {
   IconGitHub,
+  IconTikTok,
   IconNextChat,
   IconSeparator,
   IconVercel
@@ -59,21 +60,21 @@ export function Header() {
         <Button asChild size="sm" variant="ghost">
           <a
             target="_blank"
-            href="https://github.com/vercel-labs/gemini-chatbot"
+            href="https://www.tiktok.com/@bingblong.com"
             rel="noopener noreferrer"
           >
-            <IconGitHub />
-            <span className="hidden ml-2 md:flex">GitHub</span>
+            <IconTikTok />
+            <span className="hidden ml-2 md:flex">TikTok</span>
           </a>
         </Button>
         <Button asChild size="sm" className="rounded-lg gap-1">
           <a
-            href="https://vercel.com/templates/next.js/gemini-ai-chatbot"
+            href="https://t.me/bingblongai"
             target="_blank"
           >
             <IconVercel className="size-3" />
-            <span className="hidden sm:block">Deploy to Vercel</span>
-            <span className="sm:hidden">Deploy</span>
+            <span className="hidden sm:block">Join Telegram</span>
+            <span className="sm:hidden">Join</span>
           </a>
         </Button>
       </div>

@@ -137,6 +137,23 @@ function IconGitHub({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function IconTikTok({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <title>TikTok</title>
+      <path d="M12 2.5c-5.25 0-9.5 4.25-9.5 9.5s4.25 9.5 9.5 9.5 9.5-4.25 9.5-9.5-4.25-9.5-9.5-9.5zm0 17c-4.14 0-7.5-3.36-7.5-7.5s3.36-7.5 7.5-7.5 7.5 3.36 7.5 7.5-3.36 7.5-7.5 7.5zM13.04 5.6c-.18 0-.33.14-.33.32v4.9c-.29-.1-.59-.15-.9-.15-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3v-1.1c.52.19 1.08.31 1.68.31.37 0 .68-.31.68-.68v-1.55c0-.18-.15-.32-.33-.32s-.33.14-.33.32v1.55c0 .06-.05.1-.1.1-.65 0-1.28-.17-1.86-.47-.15-.08-.33-.06-.47.05-.13.11-.2.27-.19.44v1.62c0 1.32-1.07 2.4-2.39 2.4s-2.39-1.08-2.39-2.4 1.07-2.4 2.39-2.4c.43 0 .86.13 1.23.37.13.09.3.07.42-.04.12-.12.16-.29.11-.46v-4.62c.01-.18-.14-.32-.32-.32zm-1.04 11.9c-1.16 0-2.1-.94-2.1-2.1s.94-2.1 2.1-2.1 2.1.94 2.1 2.1-.94 2.1-2.1 2.1z" />
+    </svg>
+  );
+}
+
+
 function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg
@@ -761,5 +778,6 @@ export {
   IconShare,
   IconUsers,
   IconExternalLink,
-  IconChevronUpDown
+  IconChevronUpDown,
+  IconTikTok,
 }

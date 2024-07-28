@@ -38,14 +38,14 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'List flights flying from',
-      subheading: 'San Francisco to Rome today',
-      message: `List flights flying from San Francisco to Rome today`
+      heading: 'Who is the DepEd Secretary',
+      subheading: 'Current PH DepEd Secretary',
+      message: `List Current PH DepEd Secretarytoday`
     },
     {
-      heading: 'What is the status',
-      subheading: 'of flight BA142?',
-      message: 'What is the status of flight BA142?'
+      heading: 'Who is the Philippine President',
+      subheading: 'As of today 2024',
+      message: 'Who is the Philippine President right now'
     }
   ]
 

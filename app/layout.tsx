@@ -68,6 +68,24 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div className="flex flex-col min-h-screen">
             <Header />
+            {/* Google AdSense Ad */}
+            <div className="flex justify-center my-4">
+              <ins className="adsbygoogle"
+                   style={{ display: 'block' }}
+                   data-ad-client="ca-pub-4592814778191453"
+                   data-ad-slot="1158100898"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <Script id="adsbygoogle-init">
+                {`
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                `}
+              </Script>
+            </div>
+            {/* Main content */}
+            <main className="flex-grow">
+              {children}
+            </main>
           </div>
           <TailwindIndicator />
         </Providers>

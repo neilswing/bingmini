@@ -8,6 +8,7 @@ import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
 import { KasadaClient } from '@/lib/kasada/kasada-client'
+import Script from 'next/script'
 
 export const metadata = {
   metadataBase: new URL('https://gemini.vercel.ai'),
@@ -38,6 +39,18 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script 
+          src="//produceragony.com/1d/8c/09/1d8c0950213135ab99eaa34cc2de75a9.js"
+          strategy="afterInteractive"
+        />
+        <Script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4592814778191453"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body
         className={cn(
           'font-sans antialiased',
@@ -55,7 +68,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex flex-col flex-1">{children}</main>
+            <main className="flex flex-col flex-1">
+              {children}
+              <ins className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-4592814778191453"
+                data-ad-slot="1158100898"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+              <Script id="adsbygoogle-init" strategy="afterInteractive">
+                {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+              </Script>
+            </main>
           </div>
           <TailwindIndicator />
         </Providers>
